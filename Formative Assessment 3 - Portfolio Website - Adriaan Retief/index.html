@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    
+    <title>Adriaan Retief Home</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device.width, initial-scale=1">
+    <link rel="icon" type="image/gif" href="FA3Images/icons/home.png" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <style>
+        html, body, h1, h2, h3, h4, h5, h6 {font-family: "Roboto", sans-serif}
+        
+        /* Parallax Effect */
+        .bgimg-1, .bgimg-2, .bgimg-3 {
+            background-attachment: fixed;
+            background-position: center;    
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+        /* First image */
+        .bgimg-1 {
+            background-image: url("FA3Images/home_parallax/html_code.PNG");
+            min-height: 400px;
+        }
+        
+        /* Second image */
+        .bgimg-2 {
+            background-image: url("FA3Images/home_parallax/cs_code2.PNG");
+            min-height: 400px;
+        }
+        
+        /* Third image */
+        .bgimg-3 {
+            background-image: url("FA3Images/home_parallax/cs_code.PNG");
+            min-height: 400px;
+        }
+        
+        /* Toggle parallax scrolling for mobile devices */
+        @media only screen and (max-device-width: 1024px) {
+            .bgimg-1, .bgimg-2, .bgimg-3 {
+                background-attachment: scroll;
+            }
+        }
+        
+    </style>
+    
+</head>
+    
+<body class="w3-grey main">
+    
+    <!-- Nav Bar -->
+    <div class="w3-hide-small static-navbar">
+        <div class="w3-bar w3-white w3-center w3-padding w3-opacity-min w3-hover-opacity-on">
+            <a href="#home" style="width:25%;" class="w3-bar-item w3-button">HOME</a>
+            <a href="gallery/gallery_1.html" style="width:25%;" class="w3-bar-item w3-button">GALLERY</a>
+            <a href="about.html" style="width:25%;" class="w3-bar-item w3-button">ABOUT</a>
+            <a href="#contact" style="width:25%;" class="w3-bar-item w3-button">CONTACT</a>
+        </div>
+    </div>
+    
+    <!-- First Parallax Image & Logo-->
+    <div class="bgimg-1 w3-display-container w3-opacity-min" id="top">
+        <div class="w3-display-middle" style="white-space:nowrap;">
+            <span class="w3-center w3-padding-large w3-blue-gray w3-xlarge w3-wide w3-animate-opacity">ADRIAAN RETIEF</span>
+        </div>
+    </div>
+    
+    <!-- Container -->
+    <div class="w3-content w3-container w3-padding-64" id="about">
+        <h3 class="w3-center">ABOUT ME</h3>
+        <p class="w3-center"><em>Software, web and solutions developer</em></p>
+        <p>I've always been a logical person. Computers and coding, whether it be developing effective and memory efficient modules in C++, or lazily slapping together elements for a web page, has always been a source of purpose for me. Like most unemployed youth, I'm passionate about procrastination. I can put off a project for so long, it'll make blue cheese look fresh. I am also, however, experienced in the art of pulling all nighters to finish that long over due project. If this sounds like you, I just might be the developer your business needs. We'll get along splendidly.</p>
+        <div class="w3-row">
+            <div class="w3-col m6 w3-center w3-padding-large">
+                <p><b><i class="fa fa-user w3-margin-right"></i>Adriaan Retief</b></p><br>
+                <img src="FA3Images/about/face_shot.png" class="w3-round w3-image w3-opacity w3-hover-opacity-off"alt="face here" width="184px" height="184px">
+            </div>
+            
+          <div class="w3-col m6 w3-hide-small w3-padding-large">
+          <p>Welkom by retiefadriaan.com - die tuiste van die luiste programmeerder in Suid-Afrika. Ek is vaardig in die kuns van afskeep, opfoeter, en befomfaai. Wat meer is, ek kan dit in verskeie tale doen - soms in meer as een gelyk. C#, C++, Java, JavaScript, HTML, CSS, PHP, Python, alles en dan nog so paar. My ervaring in die sagteware wêreld strek van my kamer tot by my voorstoep. Grappies eenkant, ek kan databassise skep en handhaaf vir enige agterplaasbesigheid. Ek kan webblaaie ontwerp wat netjies lyk en heel funksioneel voorkom... totdat jy die funksies probeer gebruik. Fantasties, of hoe?</p>
+    </div>    
+        
+        </div>
+    </div>
+    
+    <!-- Second Parallax Image -->
+    <div class="bgimg-2 w3-display-container w3-opacity-min">
+        <div class="w3-display-middle">
+            <span class="w3-center w3-padding-large w3-blue-gray w3-xlarge w3-wide w3-animate-opacity">PORTFOLIO</span>
+        </div>
+    </div>
+    
+    <!-- COntainer -->
+    <div class="w3-content w3-container w3-padding 64" id="portfolio">
+        <h3 class="w3-center">PROJECTS</h3>
+        <p class="w3-center"><em>Some of my recent endeavours</em></p>
+    
+        <!-- Responsive Grid -->
+        <div class="w3-row-padding w3-center">
+
+            <div class="w3-col m3">
+                <img src="FA3Images/portfolio_projects/dc_array_sorter.PNG" style="width:100%;height:256px;" onclick="onClick(this)" class="w3-hover-opacity" alt="Array Sorter">
+            </div>
+
+            <div class="w3-col m3">
+                <img src="FA3Images/portfolio_projects/dc_calc.PNG" style="width:100%;height:256px;" onclick="onClick(this)" class="w3-hover-opacity" alt="Simple Calculator">
+            </div>
+
+            <div class="w3-col m3">
+                <img src="FA3Images/portfolio_projects/dc_exchange.PNG" style="width:100%;height:256px;" onclick="onClick(this)" class="w3-hover-opacity" alt="Exchange Rate Calculator">
+            </div>
+
+            <div class="w3-col m3">
+                <img src="FA3Images/portfolio_projects/dc_interest.PNG" style="width:100%;height:256px;" onclick="onClick(this)" class="w3-hover-opacity" alt="Interest Rate Calculator">
+            </div>
+            <br>
+            
+            <a href="gallery/gallery_2.html"><button class="w3-button w3-padding-large w3-blue-grey" style="margin-top:32px;margin-bottom:32px">LOAD MORE</button></a>            
+
+        </div>  
+    </div>
+    
+    <!-- Modal for full size images -->
+    <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+        <span class="w3-button w3-large w3-black w3-display-bottomleft" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+        <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+            <img id="img01" class="w3-image">
+            <p id="caption" class="w3-opacity w3-large"></p>
+        </div>
+    </div>    
+    
+    <!-- Third parallax image -->
+    <div class="bgimg-3 w3-display-container w3-opacity-min">
+        <div class="w3-display-middle">
+            <span class="w3-center w3-padding-large w3-blue-gray w3-xlarge w3-wide w3-animate-opacity">CONTACT</span>
+        </div>
+    </div>
+    
+    <!-- container -->
+    <div class="w3-content w3-container w3-padding-64" id="contact">
+        <h3 class="w3-center">LOCATION</h3>
+        <p class="w3-center"><em>Leave some feedback!</em></p>
+        
+        <div class="w3-row w3-padding-32 w3-section">
+            <div class="w3-col m4 w3-container">
+                <!-- Google Maps -->
+                <div id="googleMap" class="w3-round-large w3-grayscale" style="width:100%;height:400px;">
+                </div>
+            </div>
+            
+            <div class="w3-col m8 w3-panel">
+                <div class="w3-large w3-margin-bottom">
+                    <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i>Krugersdorp, South Africa<br>
+                    <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i>Phone: 074 897 4355<br>
+                    <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i>retiefadriaan@gmail.com<br>
+                </div>
+                <p>Let's talk over a cup of <i class="fa fa-coffee"></i>, or leave me a message:</p>
+                <form action="thanks.html" method="post" target="_self">
+                    <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+                        <div class="w3-half">
+                            <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+                        </div>
+                        <div class="w3-half">
+                            <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+                        </div>
+                    </div>
+                    <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+                    <button class="w3-button w3-black w3-right w3-section" type="submit">
+                        <i class="fa fa-paper-plane"></i> SEND MESSAGE
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Footer -->
+    <footer class="w3-container w3-dark-gray w3-center w3-margin-top">
+        <button onclick="topFunction()" id="bttBtn" title="Back to top">Top</button>
+        <p>Find me elsewhere on the internet</p>
+        <a href="https://github.com/retief-adriaan"><i class="fa fa-github w3-hover-opacity"></i></a>
+        <a href="https://www.instagram.com/adriaan_retief/?hl=en"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+        <a href="https://www.linkedin.com/in/adriaan-retief-611651142/?trk=uno-choose-ge-no-intent&dl=no"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+        <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+    </footer>
+    
+    <!-- Scripts -->
+    <script src="js/personal_site_scripts.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDoB-kLtAVeHtMQ5Gi1BW4noGZ64t46jgs&callback=myMap"></script>
+    
+</body>
+    
+</html>
