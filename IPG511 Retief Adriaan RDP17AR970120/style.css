@@ -1,0 +1,50 @@
+body {
+    background-color: #331a00;
+}
+
+/* common text properties grouped to avoid reppetition */
+.content {
+    color: navajowhite;
+    text-align: center;
+    font-family: sans-serif;
+    font-variant: small-caps;
+}
+
+/* common border properties grouped to avoid reppetition */
+.border {
+    border-style: solid;
+    border-width: 2px;
+    border-color: navajowhite;
+    padding: 20px;
+    background-color: black;
+    margin: 16px;
+    border-collapse: collapse;
+}
+
+h1 {
+    font-size: 40px;
+    font: Geneva;
+}
+
+h2 {
+    font-size: 20px;
+    font: Geneva;
+}
+
+h3.content {
+    font-size: 18px;
+    font: Tahoma;
+    font-variant: normal;
+    font-style: italic;
+}
+
+p.content {
+    font: Tahoma;
+    font-variant: normal;    
+}
+
+img.resize {
+    height: "50%";
+    width: "50%";
+    
+}
